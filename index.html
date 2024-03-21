@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SubodhXinflucraft</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <!-- Logo -->
+        <div class="flex-shrink-0 items-center">
+          <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+        </div>
+        <!-- Hamburger menu icon -->
+        <div class="sm:hidden ml-auto">
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <!-- Desktop menu -->
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <a href="index.html" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+            <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+            <a href="Blog.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Blog</a>
+            <a href="/contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <a href="index.html" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+        <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
+        <a href="Blog.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Blog</a>
+        <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <!-- hero -->
+  <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
+      
+      <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Entrepreneur by trade, technology enthusiast by essence</h1>
+        <p class="mb-8 leading-relaxed">Subscribe now for exclusive access to my free weekly newsletter! Stay ahead with the latest updates on startup ecosystems, AI advancements, job market insights, and expert analysis on economics and marketing trends.</p>
+        <div class="flex w-full justify-center items-end">
+          <div class="relative mr-4 lg:w-full xl:w-1/2 w-2/4 md:w-full text-left">
+            <label for="hero-field" class="leading-7 text-sm text-gray-400">Email</label>
+            <input type="email" id="hero-field" name="hero-field" class="w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:ring-2 focus:ring-indigo-900 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Subscribe</button>
+        </div>
+        <p class="text-sm mt-2 text-gray-500 mb-8 w-full">Join and stay informed with the latest insights delivered straight to your inbox</p>
+        
+      </div>
+    </div>
+  </section>
+<!-- hero end -->
+<!-- about section -->
+<section id="about" class="text-gray-400 bg-gray-900 body-font py-20">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center">
+      <!-- Image Section -->
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <div class="relative rounded-lg overflow-hidden">
+          <img class="object-cover object-center w-full h-full" src="/assets/WhatsApp Image 2024-03-21 at 05.39.19_647620fe.jpg" alt="Your Image" style="height: 400px;">
+        </div>
+      </div>
+      
+      <!-- Text Section -->
+     <!-- Text Section -->
+<div class="md:w-1/2 md:ml-10">
+    <h2 class="text-2xl font-bold mb-4">Subodh Kumar Pradhan</h2>
+    <p class="mb-4">With 4 years of experience in blogging and SEO, I have a passion for creating engaging and informative content. My skills in web development have allowed me to take my content creation to the next level by building web apps. I'm currently building my own startup, Influcraft, which combines my love for blogging and web development to help businesses and influencers grow their online presence. Let's connect and explore how we can work together to achieve your goals.</p>
+    <div class="flex space-x-4 mb-8">
+      <!-- Replace "#" with your social media links -->
+      <a href="#" class="text-gray-600 hover:text-white text-lg">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="#" class="text-gray-600 hover:text-white text-lg">
+        <i class="fa-brands fa-square-x-twitter"></i>
+      </a>
+      <a href="#" class="text-gray-600 hover:text-white text-lg">
+        <i class="fa-brands fa-square-instagram"></i>
+      </a>
+    </div>
+  </div>
+  
+    </div>
+  </section>
+  
+<!-- end -->
+<!-- skill  -->
+<section class=" text-white bg-gray-900 body-font py-12 md:py-16">
+    <div class="container mx-auto px-4 flex flex-wrap items-center">
+      <!-- Text on left -->
+      <div class="w-full md:w-1/2 mb-6 md:mb-0 pr-4">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">EXPERIENCE WITH</h2>
+        <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <!-- Technology names on right -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <div class="flex flex-wrap justify-center">
+          <!-- Technology 1 -->
+          <div class="w-1/2 p-2">
+            <div class="border border-gray-300 rounded-lg p-4 text-center">
+              <span class="text-lg font-semibold">React.js</span>
+            </div>
+          </div>
+          <!-- Technology 2 -->
+          <div class="w-1/2 p-2">
+            <div class="border border-gray-300 rounded-lg p-4 text-center">
+              <span class="text-lg font-semibold">JavaScript</span>
+            </div>
+          </div>
+          <!-- Technology 3 -->
+          <div class="w-1/2 p-2">
+            <div class="border border-gray-300 rounded-lg p-4 text-center">
+              <span class="text-lg font-semibold">Node.js</span>
+            </div>
+          </div>
+          <!-- Technology 4 -->
+          <div class="w-1/2 p-2">
+            <div class="border border-gray-300 rounded-lg p-4 text-center">
+              <span class="text-lg font-semibold">MongoDB</span>
+            </div>
+          </div>
+          <!-- Add more technology names as needed -->
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- skill end -->
+<!-- blog section -->
+<!-- blog section -->
+<div class="text-gray-400 bg-gray-900 body-font py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <p class="mt-2 text-lg leading-8 text-gray-600">From The Last Week newsletter , Read If You Missed It.</p>
+      </div>
+      <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <article class="flex max-w-xl flex-col items-start justify-between">
+          <div class="flex items-center gap-x-4 text-xs">
+            <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+            <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+          </div>
+          <div class="group relative">
+            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Boost your conversion rate
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+          </div>
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+            <div class="text-sm leading-6">
+              <p class="font-semibold text-gray-900">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Michael Foster
+                </a>
+              </p>
+              <p class="text-gray-600">Co-Founder / CTO</p>
+            </div>
+          </div>
+        </article>
+        <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+              <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+            </div>
+            <div class="group relative">
+              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Boost your conversion rate
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+              <div class="text-sm leading-6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Michael Foster
+                  </a>
+                </p>
+                <p class="text-gray-600">Co-Founder / CTO</p>
+              </div>
+            </div>
+          </article>
+          <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+              <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+            </div>
+            <div class="group relative">
+              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Boost your conversion rate
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+              <div class="text-sm leading-6">
+                <p class="font-semibold text-gray-900">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Michael Foster
+                  </a>
+                </p>
+                <p class="text-gray-600">Co-Founder / CTO</p>
+              </div>
+            </div>
+          </article>
+        <!-- More articles -->
+      </div>
+    </div>
+  </div>
+  <!-- Add view all posts button -->
+  <div class="text-gray-400 bg-gray-900 body-font flex justify-center">
+    <a href="/Blog.html" class="inline-flex items-center px-4 py-2 bg-indigo-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-indigo-600 active:bg-indigo-700 focus:outline-none focus:border-indigo-900 focus:ring ring-indigo-300 disabled:opacity-25 transition ease-in-out duration-150">
+      View All Posts 
+      <!-- Arrow icon -->
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+  
+  
+<!-- end -->
+<!-- footer -->
+<footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Subodh</span>
+      </a>
+      <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2023 Subodh —
+        <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@subodh</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-400">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+<!-- footer -->
+<!-- js -->
+  <script src="index.js"></script>
+</body>
+</html>
